@@ -1,0 +1,6 @@
+#Ignore thumbnails created by Windows
+Thumbs.db
+
+####### JDeveloper ##########
+# Cache Folder & Files
+src/.data
