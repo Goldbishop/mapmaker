@@ -12,6 +12,11 @@
    <list n="listOfChildren">
       <hash><url n="URL" path="MapMaker.UI/MapMaker.UI.jpr"/></hash>
    </list>
+   <hash n="oracle.jdeveloper.maven.compiler.MavenConfiguration">
+      <hash n="oracle.jdeveloper.maven.compiler.MavenConfiguration">
+         <value n="defaultExecuteRadioButtonSelected" v="true"/>
+      </hash>
+   </hash>
    <hash n="oracle.jdeveloper.model.ApplicationLibraries">
       <list n="libraryReferences">
          <hash>
@@ -19,5 +24,12 @@
             <value n="isJDK" v="false"/>
          </hash>
       </list>
+   </hash>
+   <hash n="oracle.jdeveloper.model.PathsConfiguration">
+      <hash n="ApplicationSrcContentSet">
+         <list n="url-path">
+            <url path="."/>
+         </list>
+      </hash>
    </hash>
 </jws:workspace>
