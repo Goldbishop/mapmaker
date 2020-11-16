@@ -4,17 +4,17 @@ import javafx.application.Application;
 
 import javafx.stage.Stage;
 
-public class MapMakerGUI extends Application {
-    public MapMakerGUI() {
+public class MapMaker extends Application {
+    public MapMaker() {
         super();
     }
 
     public static void main(String[] args) {
-        MapMakerGUI mapMakerGUI = new MapMakerGUI();
+        MapMaker mapMakerGUI = new MapMaker();
     }
 
     @Override
     public void start(Stage stage) throws Exception {
-        // TODO Implement this method
+        
     }
 }
