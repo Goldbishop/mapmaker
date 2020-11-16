@@ -4,3 +4,4 @@ Thumbs.db
 ####### JDeveloper ##########
 # Cache Folder & Files
 src/.data
+bin/
