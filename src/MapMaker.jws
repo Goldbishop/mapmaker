@@ -12,4 +12,12 @@
    <list n="listOfChildren">
       <hash><url n="URL" path="MapMaker.UI/MapMaker.UI.jpr"/></hash>
    </list>
+   <hash n="oracle.jdeveloper.model.ApplicationLibraries">
+      <list n="libraryReferences">
+         <hash>
+            <url n="id" path="../../../../../Users/goldbishop/AppData/Roaming/JDeveloper/system12.2.1.4.42.190911.2248/o.jdeveloper/JavaFX 11.library"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+      </list>
+   </hash>
 </jws:workspace>

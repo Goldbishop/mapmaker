@@ -39,6 +39,20 @@
          </list>
       </hash>
    </hash>
+   <hash n="oracle.jdevimpl.config.JProjectLibraries">
+      <list n="exportedReferences">
+         <hash>
+            <url n="id" path="../../../../../../Users/goldbishop/AppData/Roaming/JDeveloper/system12.2.1.4.42.190911.2248/o.jdeveloper/JavaFX 11.library"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+      </list>
+      <list n="libraryReferences">
+         <hash>
+            <url n="id" path="../../../../../../Users/goldbishop/AppData/Roaming/JDeveloper/system12.2.1.4.42.190911.2248/o.jdeveloper/JavaFX 11.library"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+      </list>
+   </hash>
    <hash n="oracle.jdevimpl.config.JProjectPaths">
       <url n="outputDirectory" path="../../bin/"/>
    </hash>
