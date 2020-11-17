@@ -10,7 +10,7 @@ public class MapMaker extends Application {
     }
 
     public static void main(String[] args) {
-        MapMaker mapMakerGUI = new MapMaker();
+        launch(args);
     }
 
     @Override
