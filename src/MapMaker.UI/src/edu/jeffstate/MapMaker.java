@@ -28,5 +28,11 @@ public class MapMaker extends Application {
     @Override
     public void start(Stage stage) throws Exception {
         
+    @Override
+    public void stop() {
+        System.out.println("Exiting via MapMaker.stop method");
+
+        System.exit(0);
     }
+
 }
