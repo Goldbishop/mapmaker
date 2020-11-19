@@ -1,6 +1,5 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
 <jws:workspace xmlns:jws="http://xmlns.oracle.com/ide/project">
-   <value n="application-package-prefix" v="edu.jeffstate"/>
    <value n="appTemplateId" v="javaAppTemplate"/>
    <hash n="component-versions">
       <value n="oracle.ide.model.Project" v="11.1.1.1.0;12.2.1.4.0"/>
@@ -12,4 +11,17 @@
    <list n="listOfChildren">
       <hash><url n="URL" path="MapMaker.UI/MapMaker.UI.jpr"/></hash>
    </list>
+   <hash n="oracle.jdeveloper.maven.compiler.MavenConfiguration">
+      <hash n="oracle.jdeveloper.maven.compiler.MavenConfiguration">
+         <value n="defaultExecuteRadioButtonSelected" v="true"/>
+      </hash>
+   </hash>
+   <hash n="oracle.jdeveloper.model.ApplicationLibraries"/>
+   <hash n="oracle.jdeveloper.model.PathsConfiguration">
+      <hash n="ApplicationSrcContentSet">
+         <list n="url-path">
+            <url path="."/>
+         </list>
+      </hash>
+   </hash>
 </jws:workspace>

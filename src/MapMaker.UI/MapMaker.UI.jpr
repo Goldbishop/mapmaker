@@ -20,14 +20,76 @@
       <string v="oracle.bm.commonIde.data.project.ModelerProjectSettings/modelersContentSet"/>
       <string v="oracle.toplink.workbench.addin/toplinkContentSet"/>
    </list>
-   <value n="defaultPackage" v="edu.jeffstate"/>
+   <value n="defaultPackage" v=""/>
    <hash n="oracle.ide.model.TechnologyScopeConfiguration">
       <list n="technologyScope">
          <string v="Java"/>
       </list>
    </hash>
    <hash n="oracle.jdeveloper.compiler.OjcConfiguration">
+      <list n="copyRes">
+         <string v=".fxml"/>
+         <string v=".cpx"/>
+         <string v=".dcx"/>
+         <string v=".ejx"/>
+         <string v=".gif"/>
+         <string v=".ini"/>
+         <string v=".jpeg"/>
+         <string v=".jpg"/>
+         <string v=".png"/>
+         <string v=".properties"/>
+         <string v=".sva"/>
+         <string v=".tag"/>
+         <string v=".tld"/>
+         <string v=".wsdl"/>
+         <string v=".xcfg"/>
+         <string v=".xlf"/>
+         <string v=".xml"/>
+         <string v=".xsd"/>
+         <string v=".xsl"/>
+      </list>
       <value n="webIANAEncoding" v="windows-1252"/>
+   </hash>
+   <hash n="oracle.jdeveloper.deploy.dt.DeploymentProfiles">
+      <hash n="profileDefinitions">
+         <hash n="MapMakerJAR">
+            <hash n="archiveOptions">
+               <value n="hasManifest" v="true"/>
+               <value n="mainClass" v="edu.jeffstate.MapMaker"/>
+            </hash>
+            <hash n="fileGroups">
+               <list n="groups">
+                  <hash>
+                     <list n="contributors">
+                        <hash>
+                           <value n="type" v="2"/>
+                        </hash>
+                        <hash>
+                           <value n="type" v="7"/>
+                        </hash>
+                     </list>
+                     <value n="displayName" v="Project Output"/>
+                     <hash n="filters">
+                        <list n="rules">
+                           <hash>
+                              <value n="pattern" v="**"/>
+                              <value n="type" v="0"/>
+                           </hash>
+                        </list>
+                     </hash>
+                     <value n="internalName" v="project-output"/>
+                     <value n="type" v="1"/>
+                  </hash>
+               </list>
+            </hash>
+            <url n="jarURL" path="../../bin/MapMaker.jar"/>
+            <value n="profileClass" v="oracle.jdeveloper.deploy.jar.ArchiveProfile"/>
+            <value n="profileName" v="MapMakerJAR"/>
+         </hash>
+      </hash>
+      <list n="profileList">
+         <string v="MapMakerJAR"/>
+      </list>
    </hash>
    <hash n="oracle.jdeveloper.model.PathsConfiguration">
       <hash n="javaContentSet">
@@ -39,7 +101,68 @@
          </list>
       </hash>
    </hash>
+   <hash n="oracle.jdeveloper.runner.RunConfigurations">
+      <hash n="runConfigurationDefinitions">
+         <hash n="Default">
+            <list n="addExportsDetailsSelected">
+               <boolean v="false"/>
+            </list>
+            <list n="addExportsOptionData">
+               <string v=""/>
+            </list>
+            <list n="addReadsDetailsSelected">
+               <boolean v="false"/>
+            </list>
+            <list n="addReadsOptionData">
+               <string v=""/>
+            </list>
+            <value n="custom" v="false"/>
+            <value n="limitModulesOptionData"/>
+            <value n="listModulesOptionData"/>
+            <value n="moduleOptionData"/>
+            <value n="name" v="Default"/>
+            <list n="patchModuleOptionData">
+               <string v=""/>
+            </list>
+            <list n="patchModulesDetailsSelected">
+               <boolean v="false"/>
+            </list>
+            <url n="runDirectoryURL" path="../../bin/"/>
+            <value n="saveAllBeforeRun" v="true"/>
+            <url n="targetURL" path="../../bin/MapMaker.jar"/>
+            <value n="traceModuleDefinitionChangesLevel" v="-Xlog:modules="/>
+            <value n="upgradeModulePathData"/>
+            <value n="userSuppliedAddModules"/>
+            <value n="userSuppliedModulePath"/>
+         </hash>
+      </hash>
+   </hash>
+   <hash n="oracle.jdevimpl.config.JProjectLibraries">
+      <list n="exportedReferences">
+         <hash>
+            <url n="id" path="../../../../../../Users/goldbishop/AppData/Roaming/JDeveloper/system12.2.1.4.42.190911.2248/o.jdeveloper/JavaFX 11.library"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+      </list>
+      <hash n="jdkReference">
+         <url n="id" path="../../../../../../Users/goldbishop/AppData/Roaming/JDeveloper/system12.2.1.4.42.190911.2248/o.jdeveloper/11.0.2.jdk"/>
+         <value n="isJDK" v="true"/>
+         <value n="jdkVersion" v="11.0.2"/>
+      </hash>
+      <list n="libraryReferences">
+         <hash>
+            <url n="id" path="../../../../../../Users/goldbishop/AppData/Roaming/JDeveloper/system12.2.1.4.42.190911.2248/o.jdeveloper/JavaFX 11.library"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+      </list>
+      <list n="modulePathLibraries">
+         <hash>
+            <url n="id" path="../../../../../../Users/goldbishop/AppData/Roaming/JDeveloper/system12.2.1.4.42.190911.2248/o.jdeveloper/JavaFX 11.library"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+      </list>
+   </hash>
    <hash n="oracle.jdevimpl.config.JProjectPaths">
-      <url n="outputDirectory" path="../../bin/"/>
+      <url n="outputDirectory" path="bin/"/>
    </hash>
 </jpr:project>
