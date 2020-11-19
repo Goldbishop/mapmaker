@@ -8,18 +8,31 @@ import javafx.event.ActionEvent;
 
 import javafx.fxml.FXML;
 
-import javafx.fxml.FXMLLoader;
-
-import javafx.scene.Node;
+import javafx.scene.control.Accordion;
+import javafx.scene.control.MenuBar;
+import javafx.scene.control.Tab;
+import javafx.scene.control.TabPane;
+import javafx.scene.control.ToolBar;
+import javafx.scene.layout.HBox;
+import javafx.scene.layout.VBox;
 
 import javafx.stage.FileChooser;
 
-import javafx.stage.Stage;
-
-import javax.swing.filechooser.FileNameExtensionFilter;
-
 public class MapMakerGUIController extends MapMakerController {
 
+    /*** Control Variables
+     * The Variable Name and Type, should reflect the same 'fx:id' value and XML Element
+     * **/
+    @FXML
+    private Accordion leftAside;
+    @FXML
+    private MenuBar mainMenuBar;
+    @FXML
+    private ToolBar mainToolBar;
+    @FXML
+    private TabPane tabContainer;
+    @FXML
+    private HBox statusBar;
 
     @FXML
     private void onFileQuit(ActionEvent evt) {
