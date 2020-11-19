@@ -48,5 +48,8 @@ public class MapMakerGUIController extends MapMakerController {
         fc.getExtensionFilters().addAll(new FileChooser.ExtensionFilter("Map File", "*.map"));
         File newFile = fc.showOpenDialog(this.getStage());
         
+        Tab tb = new Tab();
+        tb.setText(newFile.getName());
+        tabContainer.getTabs().add(tb);
     }
 }
