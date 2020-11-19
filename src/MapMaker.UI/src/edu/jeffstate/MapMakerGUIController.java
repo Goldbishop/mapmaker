@@ -43,13 +43,19 @@ public class MapMakerGUIController extends MapMakerController {
 
     @FXML
     private void onFileNew(ActionEvent evt) {
-        FileChooser fc = new FileChooser();
-        fc.setTitle("New Map File");
-        fc.getExtensionFilters().addAll(new FileChooser.ExtensionFilter("Map File", "*.map"));
-        File newFile = fc.showOpenDialog(this.getStage());
-        
-        Tab tb = new Tab();
-        tb.setText(newFile.getName());
-        tabContainer.getTabs().add(tb);
+        try{
+            FileChooser fc = new FileChooser();
+            fc.setInitialDirectory(new File("c:\\"));
+            fc.setTitle("New Map File");
+            fc.getExtensionFilters().addAll(new FileChooser.ExtensionFilter("Map File", "*.map"));
+            File newFile = fc.showSaveDialog(getStage());
+            newFile.createNewFile();
+            
+            Tab tb = new Tab();
+            tb.setText(newFile.getName());
+            tabContainer.getTabs().add(tb);            
+        }catch (Exception ex){
+            ex.printStackTrace();
+        }
     }
 }
