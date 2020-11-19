@@ -46,7 +46,7 @@ public class MapMakerGUIController extends MapMakerController {
         FileChooser fc = new FileChooser();
         fc.setTitle("New Map File");
         fc.getExtensionFilters().addAll(new FileChooser.ExtensionFilter("Map File", "*.map"));
-        File newFile = fc.showOpenDialog(this._stage);
-
+        File newFile = fc.showOpenDialog(this.getStage());
+        
     }
 }

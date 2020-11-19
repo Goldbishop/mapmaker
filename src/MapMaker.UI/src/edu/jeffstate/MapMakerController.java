@@ -4,8 +4,11 @@ import javafx.stage.Stage;
 
 abstract class MapMakerController {
     
-    protected Stage _stage;
-    protected void setStage(Stage stage) {
+    private Stage _stage;
+    void setStage(Stage stage) {
         this._stage = stage;
+    }
+    Stage getStage(){
+        return this._stage;
     }
 }
