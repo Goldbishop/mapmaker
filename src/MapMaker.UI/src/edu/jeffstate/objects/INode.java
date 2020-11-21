@@ -9,7 +9,7 @@ public interface INode<LinkType> {
     /***
      * @return the collection of Exits
      */
-    public Map<DirectionEnum, LinkType> getExits();
+    public Map<DirectionEnum, LinkType> getConnections();
 
     /** 
      * @return the Nodes's position on the map
