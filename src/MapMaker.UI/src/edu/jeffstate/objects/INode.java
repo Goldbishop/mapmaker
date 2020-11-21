@@ -5,14 +5,14 @@ import java.awt.Point;
 import java.util.Map;
 import java.util.Set;
 
-public interface INode<T> {
+public interface INode<LinkType> {
     /***
      * @return the collection of Exits
      */
-    public Map<DirectionEnum, T> getExits();
+    public Map<DirectionEnum, LinkType> getExits();
 
     /** 
-     * @returns the Nodes's position on the map
+     * @return the Nodes's position on the map
      */
     public Point getPos();
 
