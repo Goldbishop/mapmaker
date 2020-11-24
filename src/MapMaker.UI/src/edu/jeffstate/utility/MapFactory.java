@@ -2,9 +2,11 @@ package edu.jeffstate.utility;
 
 import java.util.EnumMap;
 
-final class MapFactory {
-    MapFactory() {
-        
+/***
+ * Factory to standardize creation and other Map related operations
+ */
+public final class MapFactory {
+
     }
     
     EnumMap<ROOMTYPE, String> rmMap;
