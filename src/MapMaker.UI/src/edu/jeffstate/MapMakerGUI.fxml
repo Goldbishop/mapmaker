@@ -88,8 +88,23 @@
     <left>
         <Accordion fx:id="leftAside" BorderPane.alignment="CENTER">
             <panes>
-                <TitledPane animated="false" text="untitled 1"/>
-                <TitledPane  animated="false" text="untitled 2"/>
+            <TitledPane fx:id="titledGame" onMouseClicked="#titledGame_OnMouseClicked" prefHeight="200.0" prefWidth="200.0" text="Games">
+               <content>
+                  <TreeView fx:id="treeWorlds" prefHeight="200.0" prefWidth="200.0">
+                     <contextMenu>
+                        <ContextMenu fx:id="ctxTreeWorlds">
+                          <items>
+                            <MenuItem mnemonicParsing="false" text="Unspecified Action" />
+                          </items>
+                        </ContextMenu>
+                     </contextMenu>
+                  </TreeView>
+               </content>
+            </TitledPane>
+            <TitledPane fx:id="titleObject" prefHeight="200.0" prefWidth="200.0" text="Objects">
+               <content>
+                  <FlowPane fx:id="flowObjects" prefHeight="200.0" prefWidth="200.0" />
+               </content></TitledPane>
             </panes>
         </Accordion>
     </left>

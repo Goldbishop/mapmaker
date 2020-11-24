@@ -91,4 +91,13 @@ public class MapMakerGUIController extends MapMakerController {
             ex.printStackTrace();
         }
     }
+    @FXML
+    private void titledGame_OnMouseClicked(ActionEvent evt) {
+        // Obtain Existing List, if known
+
+        // Create/Fill @lstWorlds
+
+    }
+
+
 }
