@@ -35,7 +35,7 @@ public class MapMakerGUIController extends MapMakerController {
     private HBox statusBar;
 
     @FXML
-    private void onFileQuit(ActionEvent evt) {
+    private void FileQuit_OnAction(ActionEvent evt) {
         System.out.println("Exiting via MapMaker.onFileQuit method");
 
         Platform.exit();
