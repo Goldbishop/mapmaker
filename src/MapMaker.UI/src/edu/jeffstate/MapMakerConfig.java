@@ -10,6 +10,8 @@ public final class MapMakerConfig implements Serializable {
         super();
     }
 
+    private final String file = "MapMaker.mcfg";
+    private final transient String DEFDIR = "DEFAULTDIRECTORY";
     }
 
     /*** File Operations ***/
