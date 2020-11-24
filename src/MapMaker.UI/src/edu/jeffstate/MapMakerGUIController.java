@@ -91,6 +91,15 @@ public class MapMakerGUIController extends MapMakerController {
             ex.printStackTrace();
         }
     }
+
+    @FXML
+    private void HelpPreferences_OnAction(ActionEvent evt) {
+        // Load Preference UI
+
+        // Show Preference UI
+
+    }
+
     @FXML
     private void titledGame_OnMouseClicked(ActionEvent evt) {
         // Obtain Existing List, if known
