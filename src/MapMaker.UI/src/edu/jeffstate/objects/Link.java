@@ -1,12 +1,12 @@
 package edu.jeffstate.objects;
 
 public class Link {
-        this._srcNode = src;
-        this._desNode = dest;
     protected Link(INode src, INode dest){
+        this.SourceNode = src;
+        this.DestinationNode = dest;
     }
     
     // Nodes Link connects
-    private INode _srcNode, _desNode;
+    private INode SourceNode, DestinationNode;
     
 }
