@@ -1,20 +1,24 @@
 package edu.jeffstate.utility;
 
-import java.util.EnumMap;
+import edu.jeffstate.objects.Link;
+import edu.jeffstate.objects.Room;
 
 /***
  * Factory to standardize creation and other Map related operations
  */
 public final class MapFactory {
 
+    /**** Map Methods ****/
+    public static void CreateMap() {
     }
-    
-    EnumMap<ROOMTYPE, String> rmMap;
-    
-    
-    private void initialize(){
-        rmMap = new EnumMap<ROOMTYPE, String>(ROOMTYPE.class);
-        rmMap.put(ROOMTYPE.DESCROOM, "DescRoom");
-        rmMap.put(ROOMTYPE.VIRTROOM, "VirtualRoom");
+
+    /**** Room Methods ****/
+    public static Room CreateRoom() {
+        return null;
     }
+
+    public static Link CreateLink(Room src, Room dest) {
+        return null;
+    }
+
 }
