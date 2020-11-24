@@ -9,14 +9,20 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 
 import javafx.scene.control.Accordion;
+import javafx.scene.control.ContextMenu;
 import javafx.scene.control.MenuBar;
 import javafx.scene.control.Tab;
 import javafx.scene.control.TabPane;
+import javafx.scene.control.TitledPane;
 import javafx.scene.control.ToolBar;
+import javafx.scene.control.TreeView;
+import javafx.scene.layout.FlowPane;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
 
 import javafx.stage.FileChooser;
+
+import javax.swing.JOptionPane;
 
 public class MapMakerGUIController extends MapMakerController {
 
@@ -33,6 +39,14 @@ public class MapMakerGUIController extends MapMakerController {
     private TabPane tabContainer;
     @FXML
     private HBox statusBar;
+    @FXML
+    private TitledPane titledGame, titleObject;
+    @FXML
+    private TreeView treeWorlds;
+    @FXML
+    private ContextMenu ctxTreeWorlds;
+    @FXML
+    private FlowPane flowObjects;
 
     @FXML
     private void FileQuit_OnAction(ActionEvent evt) {
