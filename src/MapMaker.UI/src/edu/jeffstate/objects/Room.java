@@ -10,7 +10,7 @@ import javafx.scene.paint.Color;
 /***
  * Represents a simple Node object on a Map
  */
-class Room implements INode<Link> {
+public class Room implements INode<Link> {
     public Room() {
     }
 
