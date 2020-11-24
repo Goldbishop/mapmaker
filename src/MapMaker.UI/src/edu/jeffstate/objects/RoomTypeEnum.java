@@ -1,6 +1,6 @@
 package edu.jeffstate.objects;
 
-enum RoomTypeEnum {
+public enum RoomTypeEnum {
     DESCROOM,   // Description Room
     VIRTROOM    // Virtual Room
 }
