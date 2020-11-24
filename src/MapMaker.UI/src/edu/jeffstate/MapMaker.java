@@ -1,6 +1,7 @@
 package edu.jeffstate;
 
-import java.util.EventObject;
+import java.util.Hashtable;
+import java.util.Map;
 
 import javafx.application.Application;
 
@@ -14,12 +15,16 @@ import javafx.stage.Stage;
 public class MapMaker extends Application {
     public MapMaker() {
         super();
+        TabData = new Hashtable<String, Object>();
     }
 
     public static void main(String[] args) {
         launch(args);
     }
 
+    /*** Application-Level Variables ***/
+    protected static Map<String, Object> TabData; 
+    
     /*** JavaFX 11 implementation ***/
     @Override
     public void start(Stage stage) throws Exception {
