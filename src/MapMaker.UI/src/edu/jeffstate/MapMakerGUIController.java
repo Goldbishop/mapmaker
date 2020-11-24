@@ -42,19 +42,38 @@ public class MapMakerGUIController extends MapMakerController {
     }
 
     @FXML
-    private void onFileNew(ActionEvent evt) {
-        try{
-            FileChooser fc = new FileChooser();
-            fc.setInitialDirectory(new File("c:\\"));
-            fc.setTitle("New Map File");
-            fc.getExtensionFilters().addAll(new FileChooser.ExtensionFilter("Map File", "*.map"));
-            File newFile = fc.showSaveDialog(getStage());
-            newFile.createNewFile();
-            
-            Tab tb = new Tab();
-            tb.setText(newFile.getName());
-            tabContainer.getTabs().add(tb);            
-        }catch (Exception ex){
+    private void FileNewZone_OnAction(ActionEvent evt) {
+        try {
+            var fc = new FileChooser();
+            fc.setInitialDirectory(new File("Documents"));
+            fc.setTitle("New Zone Map File");
+            fc.getExtensionFilters().addAll(new FileChooser.ExtensionFilter("Zone Map File", "*.map"));
+            var newFile = fc.showSaveDialog(getStage());
+            var success = newFile.createNewFile();
+
+            if (success) {
+                var fileName = newFile.getName();
+
+                // Create/Load Map Tab
+                var tb = new Tab();
+                tb.setText(fileName);
+                tabContainer.getTabs().add(tb);
+
+                if (MapMaker.TabData.containsKey(fileName)) {
+
+                } else {
+                    MapMaker.TabData.put(fileName, null);
+                }
+
+                // Collapse Games TitledPane
+
+                // Show/Load Objects Titled Pane
+            } else {
+                //TODO: Need to identify what scenarios need to exist to be unable to create a new file
+                JOptionPane.showMessageDialog(null, "Could not Create File: " + newFile.getName(), "Alert",
+                                              JOptionPane.ERROR_MESSAGE);
+            }
+        } catch (Exception ex) {
             ex.printStackTrace();
         }
     }

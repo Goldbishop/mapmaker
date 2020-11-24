@@ -22,7 +22,6 @@
                     <menus>
                         <Menu mnemonicParsing="false" text="File">
                             <items>
-                                <MenuItem mnemonicParsing="false" onAction="#onFileNew" text="New"/>
                                 <MenuItem mnemonicParsing="false" text="Open…"/>
                                 <Menu mnemonicParsing="false" text="Open Recent"/>
                                 <SeparatorMenuItem mnemonicParsing="false"/>
@@ -33,6 +32,16 @@
                                 <SeparatorMenuItem mnemonicParsing="false"/>
                                 <MenuItem mnemonicParsing="false" text="Preferences…"/>
                                 <SeparatorMenuItem mnemonicParsing="false"/>
+                        <Menu mnemonicParsing="false" text="New">
+                          <items>
+                            <MenuItem mnemonicParsing="false" text="Game" />
+                              <MenuItem mnemonicParsing="false" text="World" />
+                              <MenuItem mnemonicParsing="false" text="Region" />
+                              <MenuItem mnemonicParsing="false" text="Area" />
+                              <MenuItem mnemonicParsing="false" onAction="#FileNewZone_OnAction" text="Zone" />
+                          </items>
+                        </Menu>
+                                <MenuItem mnemonicParsing="false" text="Open…" />
                                 <MenuItem mnemonicParsing="false" onAction="#FileQuit_OnAction" text="Quit" />
                             </items>
                         </Menu>
