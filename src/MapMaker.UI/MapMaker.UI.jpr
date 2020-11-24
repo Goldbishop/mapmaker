@@ -29,6 +29,7 @@
    <hash n="oracle.jdeveloper.compiler.OjcConfiguration">
       <list n="copyRes">
          <string v=".fxml"/>
+         <string v=".mcfg"/>
          <string v=".cpx"/>
          <string v=".dcx"/>
          <string v=".ejx"/>
