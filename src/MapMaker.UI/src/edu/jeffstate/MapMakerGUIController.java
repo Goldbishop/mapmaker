@@ -2,12 +2,18 @@ package edu.jeffstate;
 
 import java.io.File;
 
+import java.io.IOException;
+
 import javafx.application.Platform;
 
 import javafx.event.ActionEvent;
 
 import javafx.fxml.FXML;
 
+import javafx.fxml.FXMLLoader;
+
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.Accordion;
 import javafx.scene.control.ContextMenu;
 import javafx.scene.control.MenuBar;
@@ -19,7 +25,7 @@ import javafx.scene.control.TreeView;
 import javafx.scene.layout.FlowPane;
 import javafx.scene.layout.HBox;
 
-import javafx.stage.FileChooser;
+import javafx.stage.*;
 
 import javax.swing.JOptionPane;
 
@@ -93,10 +99,18 @@ public class MapMakerGUIController extends MapMakerController {
 
     @FXML
     private void HelpPreferences_OnAction(ActionEvent evt) {
-        // Load Preference UI
-
-        // Show Preference UI
-
+        try {
+            Parent layout = FXMLLoader.load(getClass().getResource("PreferencesWindow.fxml"));
+            var scene = new Scene(layout);
+            
+            var stage = new Stage();
+            stage.setScene(scene);
+            stage.initOwner(getStage());
+            stage.initModality(Modality.WINDOW_MODAL);
+            stage.showAndWait();
+        } catch (IOException exc) {
+            exc.printStackTrace();
+        }
     }
 
     @FXML
