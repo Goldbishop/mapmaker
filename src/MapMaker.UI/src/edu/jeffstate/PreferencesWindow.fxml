@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TreeView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<BorderPane prefHeight="495.0" prefWidth="520.0" xmlns="http://javafx.com/javafx/11.0.1"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.jeffstate.PreferencesWindowController">
+    <left>
+        <TreeView fx:id="tvMain" prefHeight="389.0" prefWidth="150.0"/>
+    </left>
+    <bottom>
+        <HBox alignment="CENTER" prefHeight="43.0" prefWidth="520.0" spacing="80.0"
+              style="-fx-background-color: #606060;" BorderPane.alignment="CENTER">
+            <children>
+                <Button mnemonicParsing="false" text="Commit"/>
+                <Button mnemonicParsing="false" text="Apply"/>
+                <Button mnemonicParsing="false" text="Cancel" textAlignment="CENTER"/>
+            </children>
+        </HBox>
+    </bottom>
+    <top>
+        <HBox alignment="CENTER" prefHeight="43.0" prefWidth="520.0" spacing="80.0"
+              style="-fx-background-color: #606060;" BorderPane.alignment="CENTER">
+            <children>
+                <Button mnemonicParsing="false" text="Commit"/>
+                <Button mnemonicParsing="false" text="Apply"/>
+                <Button mnemonicParsing="false" text="Cancel" textAlignment="CENTER"/>
+            </children>
+        </HBox>
+    </top>
+</BorderPane>
