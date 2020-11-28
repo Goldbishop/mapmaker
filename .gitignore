@@ -5,3 +5,7 @@ Thumbs.db
 # Cache Folder & Files
 .data/
 bin/
+
+# File Extensions
+*/*.jws
+*/*.jpr
